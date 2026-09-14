@@ -4,7 +4,16 @@
 
 ## Usage
 
-A MoveIt RViz widget can then be launched with:
+A MoveIt RViz widget for ChonkUR can be launched with:
+
+```bash
+ros2 launch chonkur_moveit_config chonkur_moveit.launch.py
+
+# If using a simulator, such as MuJoCo, use simulation time
+ros2 launch chonkur_moveit_config chonkur_moveit.launch.py use_sim_time:=true
+```
+
+For CLR, which is Chonkur plus a lift and rail, the MoveIt RViz widget can instead be launched with:
 
 ```bash
 ros2 launch clr_moveit_config clr_moveit.launch.py
